@@ -1,0 +1,18 @@
+@use "../../variables" as vars;
+@mixin default($bg-color: rgba(vars.$bg-lightest, 0.7), $padding: vars.$gap-default) {
+    padding: $padding;
+    border-radius: vars.$radius-default;
+    background-color: $bg-color;
+    color: vars.$primary;
+    box-shadow: vars.$shadow-default;
+    backdrop-filter: blur(25px);
+    overflow: hidden;
+
+    .icon {
+        color: vars.$accent;
+    }
+
+    .title {
+        margin-bottom: vars.$gap-small;
+    }
+}

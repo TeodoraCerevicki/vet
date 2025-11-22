@@ -1,0 +1,115 @@
+@use "../../../../dynamics/variables" as vars;
+@use "../../../../dynamics/layouts/positions/absolute";
+@use "../../../../dynamics/layouts/alignments/items" as align;
+@use "../../../../dynamics/components/blocks/general" as blocks;
+@use "../../../../dynamics/typography/fonts";
+
+.hero {
+  @include align.align-center();
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+
+  .hero-image {
+    @include absolute.position();
+    z-index: -1;
+    background-image: url(../../assets/images/ambulance.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: hero-image 10s infinite;
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../../assets/images/home-hero.jpg);
+    }
+  }
+
+  .hero-title {
+    @include fonts.brand-bold-font(22px);
+    @include blocks.default();
+
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  .hero-title-width {
+    @media screen and (min-width: 510px) {
+      width: 486px;
+    }
+  }
+}
+
+@keyframes hero-image {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-slider {
+  @include absolute.position();
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .overlay {
+    @include absolute.position();
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.hero-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fade-zoom 35s infinite;
+}
+
+// Delay each slide so they don't overlap
+.hero-slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.hero-slide:nth-child(2) {
+  animation-delay: 5s;
+}
+.hero-slide:nth-child(3) {
+  animation-delay: 10s;
+}
+.hero-slide:nth-child(4) {
+  animation-delay: 15s;
+}
+.hero-slide:nth-child(5) {
+  animation-delay: 20s;
+}
+.hero-slide:nth-child(6) {
+  animation-delay: 25s;
+}
+
+@keyframes fade-zoom {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  5% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  38% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}

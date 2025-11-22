@@ -1,0 +1,29 @@
+@use "../../../dynamics/variables" as vars;
+
+.introduction-wrapper {
+    padding: vars.$gap-default 0;
+    background-color: vars.$bg-default;
+
+    @media screen and (min-width: 768px) {
+        padding: vars.$gap-xl 0;
+    }
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction .card {
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+
+    .card-content {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

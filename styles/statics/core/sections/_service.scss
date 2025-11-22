@@ -1,0 +1,13 @@
+.service {
+    display: none !important;
+    box-shadow: none;
+    border: none !important;
+
+    &.service-open {
+        display: block !important;
+    }
+}
+
+.image-carousel {
+    width: 200px;
+}

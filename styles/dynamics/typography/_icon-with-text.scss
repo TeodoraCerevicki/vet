@@ -1,0 +1,16 @@
+@use 'scss-foundation/src/modules/position/absolute';
+
+@mixin on-left($spacing, $icon, $icon-color, $icon-size: 17px, $icon-top-position: 0) {
+	position: relative;
+	padding-left: $spacing;
+
+	&::before {
+		@include absolute.position( $icon-top-position, unset, unset, 0);
+		content: '#{$icon}';
+		font: {
+			family: 'icomoon';
+			size: $icon-size;
+		}
+		color: $icon-color;
+	}
+}

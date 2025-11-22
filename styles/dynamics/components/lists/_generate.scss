@@ -1,0 +1,9 @@
+@use '../../variables' as vars;
+
+@mixin style($list-style, $spacing-left: vars.$large-gap) {
+	padding-left: $spacing-left;
+        
+	li {
+		list-style: $list-style;
+	}
+}

@@ -1,0 +1,45 @@
+@use '../variables' as vars;
+
+
+// Font hover 
+@mixin font-hover($regular-state, $hover-state: $regular-state) {
+	color: $regular-state;
+    transition: vars.$default-transition;
+
+	&:hover, &:hover::before {
+		color: $hover-state;
+	}
+
+    @media (hover: hover) {
+		&:hover {
+			color: $hover-state;
+		}
+	}
+}
+
+@mixin primary-font-hover() {
+	@include font-hover(vars.$primary, vars.$accent);
+}
+
+@mixin accent-font-hover() {
+	@include font-hover(vars.$accent, vars.$primary);
+}
+
+
+// Background hover 
+@mixin background-hover($regular-state, $hover-state) {
+	background-color: $regular-state;
+    transition: vars.$default-transition;
+
+	&:hover {
+		background-color: $hover-state;
+	}
+}
+
+@mixin primary-background-hover() {
+	@include background-hover(vars.$primary, vars.$accent);
+}
+
+@mixin accent-background-hover() {
+	@include background-hover(vars.$accent, vars.$primary);
+}

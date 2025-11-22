@@ -1,0 +1,45 @@
+@use "../../../../dynamics/variables" as vars;
+
+.about {
+    position: relative;
+
+    .card-image {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
+
+    .tags-wrapper {
+        position: absolute;
+        top: 362px;
+        left: 24px;
+
+        .tag-default {
+            position: relative;
+            z-index: 1;
+        }
+
+        .tag-top,
+        .tag-bottom {
+            position: absolute;
+            top: 26%;
+            right: 29%;
+        }
+    }
+
+    &:hover {
+        .card-image {
+            filter: none;
+        }
+
+        .tag-top {
+            top: 0;
+            right: -32px;
+        }
+
+        .tag-bottom {
+            top: unset;
+            right: -32px;
+            bottom: -3px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@use "../variables" as vars;
+
+@mixin -font($family, $size) {
+	font: {
+		family: $family;
+		size: $size;
+	}
+}
+
+@mixin main-font($size: vars.$font-size-default) {
+	@include -font("Roboto-Regular", $size);
+}
+
+@mixin main-medium-font($size: vars.$font-size-default) {
+	@include -font("Roboto-Medium", $size);
+}
+
+@mixin main-bold-font($size: vars.$font-size-default) {
+	@include -font("Roboto-Bold", $size);
+}
+
+@mixin brand-bold-font($size: vars.$font-size-default) {
+	@include -font("Core-Sans-Bold", $size);
+}

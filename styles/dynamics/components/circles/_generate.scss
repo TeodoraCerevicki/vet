@@ -1,0 +1,16 @@
+@use '../../layouts/alignments/items';
+
+@mixin generate($size, $mobile-size: $size) {
+	@include items.fully-align(center, center);
+	width: $mobile-size;
+	min-width: $mobile-size;
+	height: $mobile-size;
+	overflow: hidden;
+	border-radius: 50%;
+
+	// @include breakpoints.apply-on-tablet() {
+	// 	width: $size;
+	// 	min-width: $size;
+	// 	height: $size;
+	// }
+}

@@ -1,0 +1,223 @@
+@use "../../variables" as vars;
+@use "sass:map";
+
+$spacings: (
+    mt-1: (
+        value: margin,
+        side: top,
+        size: vars.$gap-xs
+    ),
+    mt-2: (
+        value: margin,
+        side: top,
+        size: vars.$gap-small
+    ),
+    mt-3: (
+        value: margin,
+        side: top,
+        size: vars.$gap-default
+    ),
+    mt-4: (
+        value: margin,
+        side: top,
+        size: vars.$gap-large
+    ),
+    mt-5: (
+        value: margin,
+        side: top,
+        size: vars.$gap-xl
+    ),
+    mt-24: (
+        value: margin,
+        side: top,
+        size: 24px
+    ),
+
+    mb-1: (
+        value: margin,
+        side: bottom,
+        size: vars.$gap-xs
+    ),
+    mb-2: (
+        value: margin,
+        side: bottom,
+        size: vars.$gap-small
+    ),
+    mb-3: (
+        value: margin,
+        side: bottom,
+        size: vars.$gap-default
+    ),
+    mb-4: (
+        value: margin,
+        side: bottom,
+        size: vars.$gap-large
+    ),
+    mb-5: (
+        value: margin,
+        side: bottom,
+        size: vars.$gap-xl
+    ),
+    mr-1: (
+        value: margin,
+        side: right,
+        size: vars.$gap-xs
+    ),
+    mr-2: (
+        value: margin,
+        side: right,
+        size: vars.$gap-small
+    ),
+    mr-3: (
+        value: margin,
+        side: right,
+        size: vars.$gap-default
+    ),
+    mr-4: (
+        value: margin,
+        side: right,
+        size: vars.$gap-large
+    ),
+    mr-5: (
+        value: margin,
+        side: right,
+        size: vars.$gap-xl
+    ),
+    ml-1: (
+        value: margin,
+        side: left,
+        size: vars.$gap-xs
+    ),
+    ml-2: (
+        value: margin,
+        side: left,
+        size: vars.$gap-small
+    ),
+    ml-3: (
+        value: margin,
+        side: left,
+        size: vars.$gap-default
+    ),
+    ml-4: (
+        value: margin,
+        side: left,
+        size: vars.$gap-large
+    ),
+    ml-5: (
+        value: margin,
+        side: left,
+        size: vars.$gap-xl
+    ),
+    pt-1: (
+        value: padding,
+        side: top,
+        size: vars.$gap-xs
+    ),
+    pt-2: (
+        value: padding,
+        side: top,
+        size: vars.$gap-small
+    ),
+    pt-3: (
+        value: padding,
+        side: top,
+        size: vars.$gap-default
+    ),
+    pt-4: (
+        value: padding,
+        side: top,
+        size: vars.$gap-large
+    ),
+    pt-5: (
+        value: padding,
+        side: top,
+        size: vars.$gap-xl
+    ),
+    pb-1: (
+        value: padding,
+        side: bottom,
+        size: vars.$gap-xs
+    ),
+    pb-2: (
+        value: padding,
+        side: bottom,
+        size: vars.$gap-small
+    ),
+    pb-3: (
+        value: padding,
+        side: bottom,
+        size: vars.$gap-default
+    ),
+    pb-4: (
+        value: padding,
+        side: bottom,
+        size: vars.$gap-large
+    ),
+    pb-5: (
+        value: padding,
+        side: bottom,
+        size: vars.$gap-xl
+    ),
+    pr-1: (
+        value: padding,
+        side: right,
+        size: vars.$gap-xs
+    ),
+    pr-2: (
+        value: padding,
+        side: right,
+        size: vars.$gap-small
+    ),
+    pr-3: (
+        value: padding,
+        side: right,
+        size: vars.$gap-default
+    ),
+    pr-4: (
+        value: padding,
+        side: right,
+        size: vars.$gap-large
+    ),
+    pr-5: (
+        value: padding,
+        side: right,
+        size: vars.$gap-xl
+    ),
+    pl-1: (
+        value: padding,
+        side: left,
+        size: vars.$gap-xs
+    ),
+    pl-2: (
+        value: padding,
+        side: left,
+        size: vars.$gap-small
+    ),
+    pl-3: (
+        value: padding,
+        side: left,
+        size: vars.$gap-default
+    ),
+    pl-4: (
+        value: padding,
+        side: left,
+        size: vars.$gap-large
+    ),
+    pl-5: (
+        value: padding,
+        side: left,
+        size: vars.$gap-xl
+    )
+);
+
+@mixin generate() {
+    @each $spacing, $prop in $spacings {
+        $value: map.get($prop, value);
+        $side: map.get($prop, side);
+        $size: map.get($prop, size);
+
+        #{"." + $spacing } {
+            #{$value + '-' + $side}: #{$size} !important;
+        }
+    }
+}

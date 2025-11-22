@@ -1,0 +1,34 @@
+$primary: #3643ba;
+$primary-dark: #3643ba;
+$primary-light: #b1acc1;
+
+$accent: #f58220;
+$accent-dark: #607981;
+$accent-light: #add8e6;
+
+$warn: #d92946;
+
+$font-color: #242424;
+$font-color-light: #fff;
+
+$bg-default: #e0dfdd;
+$bg-lightest: #fff;
+
+$disabled: #8e8f8f;
+
+$font-size-small: 14px;
+$font-size-default: 16px;
+$font-size-large: 18px;
+
+$gap-default: 16px;
+$gap-xs: calc($gap-default / 4);
+$gap-small: calc($gap-default / 2);
+$gap-large: calc($gap-default * 2);
+$gap-xl: calc($gap-default * 4);
+
+$default-border: 1px solid #424445;
+$radius-default: 8px;
+
+$shadow-default: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+$default-transition: 0.3s;

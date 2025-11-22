@@ -1,0 +1,73 @@
+@use "../../../../dynamics/variables" as vars;
+@use "../../../../dynamics/typography/fonts";
+@use "../../../../dynamics/layouts/alignments/items" as align;
+@use "../../../../dynamics/components/blocks/general" as blocks;
+@use "../../../../dynamics/typography/modification" as modification;
+
+.background-position-top {
+    background-position-y: top !important;
+}
+
+.card {
+    @include blocks.default(rgba(vars.$bg-lightest, 0.55));
+    padding: 0;
+    border-radius: 0;
+
+    .card-image {
+        height: 400px;
+        background-color: vars.$bg-default;
+        background-image: url(../../assets/images/usluge/ambulance-room.png);
+        background-size: cover;
+        background-position: center center;
+
+        &.team {
+            background-image: url(../../assets/images/team.png);
+            background-position-y: top;
+        }
+
+        &.milos {
+            background-image: url(../../assets/images/team/milos.jpg);
+        }
+
+        &.rale {
+            background-image: url(../../assets/images/team/rale.jpg);
+        }
+
+        &.igor {
+            background-image: url(../../assets/images/team/igor.jpg);
+        }
+
+        &.pharma {
+            background-image: url(../../assets/images/pharma.png);
+        }
+
+        &.hotel {
+            background-image: url(../../assets/images/usluge/cat-hotel-4.png);
+        }
+
+        &.grooming {
+            background-image: url(../../assets/images/usluge/groomin.png);
+        }
+
+        &.laboratorija {
+            background-image: url(../../assets/images/usluge/lab.png);
+        }
+
+        &.porodiliste {
+            background-image: url(../../assets/images/usluge/porodiljski.png);
+        }
+
+        &.egzoticne-zivotinje {
+            background-image: url(../../assets/images/usluge/ptica.png);
+        }
+    }
+
+    .card-content {
+        padding: 24px;
+    }
+
+    .contact-block {
+        margin: 0;
+        padding: 0;
+    }
+}

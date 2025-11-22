@@ -1,0 +1,110 @@
+@use "../../../dynamics/variables" as vars;
+@use "../../../dynamics/layouts/positions/absolute";
+@use "../../../dynamics/layouts/alignments/items" as align;
+@use "../../../dynamics/components/blocks/general" as blocks;
+@use "../../../dynamics/typography/fonts";
+
+.block {
+    @include blocks.default(rgba(vars.$bg-lightest, 0.7));
+}
+
+.contact-block {
+    @include align.align-center();
+    @include fonts.main-bold-font();
+    transition: vars.$default-transition;
+
+    &:hover {
+        .contact-block-icon-wrapper {
+            transition: vars.$default-transition;
+            background-color: vars.$primary;
+        }
+    }
+
+    .text-holder {
+        @include align.fully-align(start, start, column);
+    }
+
+    .title {
+        @include fonts.brand-bold-font(vars.$font-size-large);
+        color: vars.$primary;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 0;
+        }
+    }
+
+    .standout {
+        font-size: 20px;
+    }
+}
+
+.contact-block-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: vars.$gap-small;
+    border-radius: vars.$radius-default;
+    background-color: vars.$accent;
+
+    .icon {
+        font-size: 24px;
+        color: vars.$font-color-light;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 76px;
+        height: 76px;
+
+        .icon {
+            font-size: 26px;
+        }
+    }
+}
+
+.contact-block-logo {
+    display: flex;
+
+    .contact-logo {
+        width: 76px;
+        height: 76px;
+    }
+
+    .contact-logo-text {
+        width: auto;
+        height: 20px;
+    }
+
+    .contact-link {
+        @include fonts.main-medium-font(17px);
+        display: block;
+
+        &.-phone {
+            color: vars.$accent;
+        }
+
+        &.-mail {
+            color: vars.$primary;
+        }
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+
+.view-all-button-wrapper {
+    position: relative;
+    margin: vars.$gap-large auto;
+
+    &::after {
+        @include absolute.position(26px, 0, unset, 0);
+        content: "";
+        border-bottom: 2px solid vars.$primary;
+    }
+
+    .view-all-button {
+        z-index: 1;
+    }
+}

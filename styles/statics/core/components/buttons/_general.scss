@@ -1,0 +1,105 @@
+@use "../../../../dynamics/variables" as vars;
+@use "../../../../dynamics/typography/fonts";
+@use "../../../../dynamics/layouts/alignments/items";
+
+%button {
+	@include fonts.brand-bold-font();
+	padding: vars.$gap-default 22px;
+	transition: 0.2s;
+	border: 1px solid transparent;
+	line-height: 1.1;
+	box-shadow: vars.$shadow-default;
+	border-radius: vars.$radius-default;
+	text-align: center;
+	text-transform: uppercase;
+	color: vars.$font-color-light;
+	letter-spacing: 1.2px;
+
+	&:disabled,
+	&.disabled {
+		background-color: vars.$disabled !important;
+		cursor: not-allowed;
+		color: vars.$font-color-light;
+	}
+
+	&.warn {
+		background-color: vars.$warn !important;
+		border-color: vars.$warn !important;
+		color: vars.$font-color-light !important;
+	}
+
+	&.small {
+		padding: vars.$gap-small;
+	}
+}
+
+.button-primary {
+	--background-color: #{vars.$primary};
+	--border-color: #{vars.$primary};
+	--color: #{vars.$primary};
+
+	&:hover {
+		background-color: vars.$accent;
+	}
+}
+
+.button-accent {
+	--background-color: #{vars.$accent};
+	--border-color: #{vars.$accent};
+}
+
+.button-basic,
+.button-stroked,
+.button-flat,
+.button-fab {
+	@extend %button;
+}
+
+.button-basic,
+.button-stroked {
+	color: var(--color);
+}
+
+.button-stroked,
+.button-flat,
+.button-fab {
+	&:hover {
+		color: vars.$font-color-light;
+	}
+}
+
+.button-basic {
+	&:hover {
+		border-color: var(--border-color);
+	}
+}
+
+.button-stroked {
+	border: 1px solid var(--border-color);
+}
+
+.button-flat,
+.button-fab {
+	background-color: var(--background-color);
+	color: vars.$font-color-light;
+}
+
+.button-fab {
+	@include items.align-center();
+
+	&_text {
+		display: block;
+		margin-left: vars.$gap-small;
+		font-size: 16px;
+	}
+
+	&.-responsive {
+		.button-fab_text {
+			display: none;
+
+			@media screen and (min-width: 1024px) {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@use "../../../../dynamics/variables" as vars;
+@use "../../../../dynamics/components/blocks/general" as blocks;
+@use "../../../../dynamics/typography/fonts";
+
+.main-footer {
+    border-top: 2px solid #c3c3c2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url(../../assets/images/footer-image.png);
+    background-position: center center;
+    background-size: cover;
+
+    .contact-block {
+        padding: 0;
+        margin: 0;
+    }
+    .block {
+        height: fit-content;
+    }
+
+    .footer-subtitle {
+        @include fonts.brand-bold-font(18px);
+    }
+
+    .copy-rights {
+        padding: vars.$gap-small 0;
+        background-color: vars.$primary-dark;
+        font-size: 14px;
+
+        .text {
+            color: vars.$font-color-light;
+        }
+    }
+}

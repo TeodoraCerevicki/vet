@@ -1,0 +1,26 @@
+@use 'scss-foundation/src/modules/position/absolute';
+
+$background: #FFF;
+
+@mixin line-through($line-height, $line-color, $text-left-spacing: 0, $text-right-spacing: 0, $text-cover: $background,  $line-top: 50%) {
+	position: relative;
+
+	.line-through-text {
+		display: inline-block;
+		padding: {
+			right: $text-right-spacing;
+			left: $text-left-spacing;
+		}
+		background-color: $text-cover;
+	}
+
+	&::before {
+		@include absolute.position-unset($line-top);
+		content: '';
+		display: block;
+		z-index: -1;
+		width: 100%;
+		height: $line-height;
+		background-color: $line-color;
+	}
+}

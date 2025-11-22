@@ -1,0 +1,15 @@
+@use '../../variables' as vars;
+
+@mixin vertical($top: vars.$gap-default, $bottom: $top) {
+    padding: {
+        top: $top;
+        bottom: $bottom;
+    };
+}
+
+@mixin horizontal($right: vars.$gap-default, $left: $right) {
+    padding: {
+        right: $top;
+        left: $bottom;
+    };
+}

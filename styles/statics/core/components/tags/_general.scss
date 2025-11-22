@@ -1,0 +1,40 @@
+@use "../../../../dynamics/variables" as vars;
+@use "../../../../dynamics/typography/fonts";
+@use "../../../../dynamics/layouts/positions/absolute";
+
+%tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: vars.$accent;
+    border-radius: vars.$radius-default;
+    color: vars.$font-color-light;
+    box-shadow: vars.$shadow-default;
+
+    &.-round {
+        border-radius: 50%;
+    }
+}
+
+.tag-small {
+    @extend %tag;
+    @include absolute.position(-5px, 0, unset, unset);
+    font-size: 12px;
+    text-transform: lowercase;
+    padding: vars.$gap-xs vars.$gap-small;
+}
+
+.tag-default {
+    @extend %tag;
+    width: 76px;
+    height: 76px;
+    font-size: 26px;
+}
+
+.tag-xs {
+    @extend %tag;
+    width: 32px;
+    height: 32px;
+    padding: vars.$gap-xs;
+    font-size: 20px;
+}
