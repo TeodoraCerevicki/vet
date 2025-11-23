@@ -1,6 +1,8 @@
 $(function () {
     const MOBILE_WIDTH = 992;
 
+    document.getElementById('year').textContent = new Date().getFullYear();
+
     const $body = $("body");
     const $burger = $(".js-burger-icon");
     const $close = $(".js-close-icon");

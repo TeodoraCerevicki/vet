@@ -1,0 +1,52 @@
+@use "../../../../dynamics/variables" as vars;
+@use "../../../../dynamics/typography/fonts";
+
+.sidebar-navigation {
+    box-shadow: vars.$shadow-default;
+
+    @media screen and (min-width: 992px) {
+        width: 250px;
+        box-shadow: none;
+        border-right: 1px solid vars.$primary;
+    }
+
+    .side-button {
+        position: absolute;
+        right: vars.$gap-default;
+        font-size: 30px;
+        color: vars.$font-color-light;
+
+        &.open {
+            transform: rotate(180deg);
+        }
+    }
+
+    .sidebar-navigation-list {
+        display: none;
+        padding: 12px vars.$gap-default vars.$gap-large;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+
+        &.open {
+            display: block;
+        }
+    }
+
+    .sidebar-link {
+        @include fonts.brand-bold-font();
+        position: relative;
+        display: block;
+        margin-top: 12px;
+        transition: 0.3s ease;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+            padding-left: 12px;
+            border-bottom: 1px solid vars.$primary;
+            transition: 0.3s ease;
+        }
+    }
+}

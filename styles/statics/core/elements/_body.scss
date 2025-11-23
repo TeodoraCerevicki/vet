@@ -1,0 +1,51 @@
+@use "../../../dynamics/variables" as vars;
+@use "../../../dynamics/typography/fonts";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    @include fonts.main-font(vars.$font-size-large);
+    margin: 0;
+    background-color: #e0dfdd;
+    color: vars.$font-color;
+
+    * {
+        outline: none;
+        transition: vars.$default-transition;
+    }
+
+    &.open-menu {
+        overflow: hidden;
+    }
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+section,
+header,
+nav,
+main,
+footer,
+article,
+aside,
+ul,
+li {
+    box-sizing: border-box;
+    line-height: 1.5;
+    color: vars.$primary;
+}
+
+span {
+    line-height: inherit;
+}

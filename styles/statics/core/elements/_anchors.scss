@@ -1,0 +1,10 @@
+@use "../../../dynamics/variables" as vars;
+@use "../../../dynamics/states/hovers";
+
+a {
+	@include hovers.font-hover(vars.$font-color);
+	display: inline-block;
+	transition: vars.$default-transition;
+	text-decoration: none !important;
+	cursor: pointer;
+}

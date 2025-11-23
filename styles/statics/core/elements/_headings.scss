@@ -1,0 +1,26 @@
+@use "../../../dynamics/variables" as vars;
+@use "../../../dynamics/typography/fonts";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0 !important;
+}
+
+h1 {
+	@include fonts.main-medium-font(vars.$font-size-large);
+	color: vars.$primary;
+	line-height: 1.25;
+}
+
+.default-title {
+	@include fonts.brand-bold-font(26px);
+	padding: vars.$gap-small;
+	color: vars.$font-color-light;
+	background-color: vars.$primary;
+	text-align: center;
+}

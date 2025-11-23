@@ -1,0 +1,113 @@
+@use "../../../../dynamics/variables" as vars;
+@use "../../../../dynamics/typography/fonts";
+@use "../../../../dynamics/layouts/alignments/items" as align;
+@use "../../../../dynamics/components/blocks/general" as blocks;
+
+.main-nav-wrapper {
+    @include blocks.default();
+    @include align.space-between();
+    overflow: unset;
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-top: vars.$gap-small;
+    padding: 0;
+
+    .company-logo {
+        height: 80px;
+    }
+
+    .link {
+        @include fonts.brand-bold-font(vars.$font-size-large);
+        display: block;
+        padding: 8px 16px;
+        border-bottom: 1px solid transparent;
+        text-transform: capitalize;
+        color: vars.$primary;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+            border-bottom-color: vars.$primary;
+        }
+    }
+}
+
+.main-nav {
+    @media screen and (max-width: 991px) {
+        position: absolute;
+        top: 88px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: end;
+        padding-bottom: 16px;
+        border-radius: 8px;
+        background-color: vars.$bg-default;
+        box-shadow: vars.$shadow-default;
+    }
+
+    @media screen and (min-width: 992px) {
+        &.hide {
+            display: block !important;
+        }
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+}
+
+.link-icon {
+    margin-right: vars.$gap-default;
+    padding: 12px;
+    border-radius: vars.$radius-default;
+    background: vars.$primary;
+    color: vars.$font-color-light !important;
+    font-size: 20px;
+
+    &:hover {
+        background-color: vars.$accent;
+
+        &::before {
+            color: vars.$font-color-light !important;
+        }
+    }
+}
+
+.icon-menu,
+.icon-xmark {
+    font-size: 26px;
+    color: vars.$primary;
+
+    @media screen and (min-width: 992px) {
+        display: none;
+    }
+}
+
+.lang-menu {
+    position: absolute;
+    top: 88px;
+    right: 28px;
+    width: 100px;
+    text-align: center;
+}
+
+.social-nav {
+    margin-top: vars.$gap-default;
+
+    @media screen and (min-width: 992px) {
+        margin-top: unset;
+    }
+}

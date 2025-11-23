@@ -1,0 +1,32 @@
+.serbian {
+    .srb-text {
+        display: inline-block;
+    }
+
+    .eng-text,
+    .rus-text {
+        display: none;
+    }
+}
+
+.english {
+    .eng-text {
+        display: inline-block;
+    }
+
+    .srb-text,
+    .rus-text {
+        display: none;
+    }
+}
+
+.russian {
+    .rus-text {
+        display: inline-block;
+    }
+
+    .eng-text,
+    .srb-text {
+        display: none;
+    }
+}

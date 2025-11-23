@@ -1,0 +1,38 @@
+@use "../../../dynamics/variables" as vars;
+@use "../../../dynamics/typography/fonts";
+
+.first-letter-capitalized {
+	display: inline-block;
+
+	&::first-letter {
+		text-transform: capitalize;
+	}
+}
+
+.capitalized {
+	text-transform: uppercase;
+}
+
+.accent {
+	color: vars.$accent;
+}
+
+.primary {
+	color: vars.$primary;
+}
+
+.font-bold {
+	@include fonts.main-bold-font();
+}
+
+.brand-font-bold {
+	@include fonts.brand-bold-font();
+}
+
+.border-bottom {
+	border-bottom: vars.$default-border;
+}
+
+.text-accent {
+	color: vars.$accent;
+}

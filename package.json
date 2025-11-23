@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "lightbox2": "^2.11.5"
+  }
+}
