@@ -15,10 +15,16 @@
 
     .card-image {
         height: 400px;
-        background-color: vars.$bg-default;
-        background-image: url(../../assets/images/usluge/ambulance-room.png);
-        background-size: cover;
-        background-position: center center;
+        // background-color: vars.$bg-default;
+        // background-image: url(../../assets/images/usluge/ambulance-room.png);
+        // background-size: cover;
+        // background-position: center center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
 
         &.team {
             background-image: url(../../assets/images/team.png);

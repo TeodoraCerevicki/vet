@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr_RS">
 
 <head>
     <meta charset="UTF-8" />
@@ -59,7 +59,7 @@
           "name": "BiljaVet Veterinarska Ambulanta",
           "url": "https://www.biljavet.rs/",
           "logo": "https://www.biljavet.rs/assets/images/bilja-vet-logo-horizontal.png",
-          "image": "https://www.biljavet.rs/assets/images/home-hero.jpg",
+          "image": "https://www.biljavet.rs/assets/images/og-image.jpg",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Drage Spasić 2a",
@@ -132,7 +132,7 @@
     </div>
 
     <header class="hero">
-        <div class="hero-slider">
+        <!-- <div class="hero-slider">
             <div class="hero-slides">
                 <div class="hero-slide" style="background-image: url('./assets/images/home-hero.jpg')"></div>
                 <div class="hero-slide" style="background-image: url('./assets/images/pharma.png')"></div>
@@ -140,6 +140,17 @@
                 <div class="hero-slide" style="background-image: url('./assets/images/usluge/cat-hotel-4.png')"></div>
                 <div class="hero-slide" style="background-image: url('./assets/images/usluge/groomin.png')"></div>
                 <div class="hero-slide" style="background-image: url('./assets/images/usluge/lab.png')"></div>
+            </div>
+            <div class="overlay"></div>
+        </div> -->
+
+        <div class="hero-slider">
+            <div class="hero-slides">
+                <div class="hero-slide slide-home-hero"></div>
+                <div class="hero-slide slide-pharma"></div>
+                <div class="hero-slide slide-waiting-room"></div>
+                <div class="hero-slide slide-cat-hotel"></div>
+                <div class="hero-slide slide-grooming"></div>
             </div>
             <div class="overlay"></div>
         </div>
@@ -181,7 +192,12 @@
                 <div class="row">
                     <section class="introduction col-12 col-xl-6 mt-24">
                         <div class="card">
-                            <div class="card-image team"></div>
+                            <div class="card-image">
+                                <picture>
+                                    <source loading="lazy" srcset="./assets/images/cards/team.webp" type="image/webp">
+                                    <img loading="lazy" src="./assets/images/cards/team.jpg" alt="Team">
+                                </picture>
+                            </div>
 
                             <h2 class="default-title"> Ambulanta BiljaVet </h2>
 
@@ -231,10 +247,11 @@
 
                                 <div class="d-flex mt-4">
                                     <div class="contact-block-logo">
-                                        <img class="contact-logo mr-2" src="./assets/images/logos/ambulanta-logo.png">
+                                        <img class="contact-logo mr-2" src="./assets/images/logos/ambulanta-logo.png"
+                                            loading="lazy">
                                         <div>
                                             <img class="contact-logo-text"
-                                                src="./assets/images/logos/ambulanta-logo-text.png">
+                                                src="./assets/images/logos/ambulanta-logo-text.png" loading="lazy">
                                             <a class="contact-link -phone" href="tel:021/511 206">021/511 206</a>
                                             <a class="contact-link -mail"
                                                 href="mailto:biljavetambulanta@gmail.com">biljavetambulanta@gmail.com</a>
@@ -248,7 +265,12 @@
 
                     <section class="introduction col-12 col-xl-6 mt-24">
                         <div class="card">
-                            <div class="card-image pharma"></div>
+                            <div class="card-image">
+                                <picture>
+                                    <source loading="lazy" srcset="./assets/images/cards/pharma.webp" type="image/webp">
+                                    <img loading="lazy" src="./assets/images/cards/pharma.jpg" alt="Pharma shop">
+                                </picture>
+                            </div>
 
                             <h2 class="default-title"> Apoteka BiljaVet </h2>
 
@@ -297,10 +319,10 @@
                                 <div class="d-flex mt-4">
                                     <div class="contact-block-logo">
                                         <img class="contact-logo mr-2" src="./assets/images/logos/apoteka-logo.png"
-                                            alt="Bilja Vet Apoteka">
+                                            alt="Bilja Vet Apoteka" loading="lazy">
                                         <div>
                                             <img class="contact-logo-text"
-                                                src="./assets/images/logos/apoteka-logo-text.png">
+                                                src="./assets/images/logos/apoteka-logo-text.png" loading="lazy">
                                             <a class="contact-link -phone" href="tel:021/511 209">021/511 209</a>
                                             <a class="contact-link -mail"
                                                 href="mailto:limanpet021@gmail.com">limanpet021@gmail.com</a>
@@ -313,7 +335,12 @@
 
                     <section class="introduction col-12 col-xl-6 mt-24">
                         <div class="card">
-                            <div class="card-image team"></div>
+                            <div class="card-image">
+                                <picture>
+                                    <source loading="lazy" srcset="./assets/images/cards/team.webp" type="image/webp">
+                                    <img loading="lazy" src="./assets/images/cards/team.jpg" alt="Team">
+                                </picture>
+                            </div>
 
                             <h2 class="default-title"> Terenska služba </h2>
 
@@ -349,7 +376,13 @@
 
                     <section class="introduction col-12 col-xl-6 mt-24" id="services">
                         <div class="card">
-                            <div class="card-image hotel"></div>
+                            <div class="card-image">
+                                <picture>
+                                    <source loading="lazy" srcset="./assets/images/cards/cat-hotel.webp"
+                                        type="image/webp">
+                                    <img loading="lazy" src="./assets/images/cards/cat-hotel.jpg" alt="Cat Hotel">
+                                </picture>
+                            </div>
 
                             <h2 class="default-title"> Hotel za mace </h2>
 
@@ -388,9 +421,11 @@
                 <div class="col-12 col-md-6 mt-5">
                     <div class="block">
                         <div class="contact-block-logo">
-                            <img class="contact-logo mr-2" src="./assets/images/logos/ambulanta-logo.png">
+                            <img class="contact-logo mr-2" src="./assets/images/logos/ambulanta-logo.png"
+                                loading="lazy">
                             <div>
-                                <img class="contact-logo-text" src="./assets/images/logos/ambulanta-logo-text.png">
+                                <img class="contact-logo-text" src="./assets/images/logos/ambulanta-logo-text.png"
+                                    loading="lazy">
                                 <a class="contact-link -phone" href="tel:021/511 206">021/511 206</a>
                                 <a class="contact-link -mail"
                                     href="mailto:biljavetambulanta@gmail.com">biljavetambulanta@gmail.com</a>
@@ -402,9 +437,10 @@
                     <div class="block mt-4">
                         <div class="contact-block-logo">
                             <img class="contact-logo mr-2" src="./assets/images/logos/apoteka-logo.png"
-                                alt="Bilja Vet Apoteka">
+                                alt="Bilja Vet Apoteka" loading="lazy">
                             <div>
-                                <img class="contact-logo-text" src="./assets/images/logos/apoteka-logo-text.png">
+                                <img class="contact-logo-text" src="./assets/images/logos/apoteka-logo-text.png"
+                                    loading="lazy">
                                 <a class="contact-link -phone" href="tel:021/511 209">021/511 209</a>
                                 <a class="contact-link -mail"
                                     href="mailto:limanpet021@gmail.com">limanpet021@gmail.com</a>

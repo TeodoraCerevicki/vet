@@ -458,7 +458,7 @@ ol li {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background-image: url(../../assets/images/ambulance.jpg);
+  background-image: url(../../assets/images/slider/pharma.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -466,7 +466,7 @@ ol li {
 }
 @media screen and (min-width: 768px) {
   .hero .hero-image {
-    background-image: url(../../assets/images/home-hero.jpg);
+    background-image: url(../../assets/images/slider/home-hero.jpg);
   }
 }
 .hero .hero-title {
@@ -495,6 +495,61 @@ ol li {
 @media screen and (min-width: 510px) {
   .hero .hero-title-width {
     width: 486px;
+  }
+}
+
+.slide-home-hero {
+  background-image: url("../../assets/images/slider/home-hero-mobile.jpg");
+  background-image: url("../../assets/images/slider/home-hero-mobile.webp");
+}
+@media (min-width: 768px) {
+  .slide-home-hero {
+    background-image: url("../../assets/images/slider/home-hero.jpg");
+    background-image: url("../../assets/images/slider/home-hero.webp");
+  }
+}
+
+.slide-pharma {
+  background-image: url("../../assets/images/slider/pharma-mobile.jpg");
+  background-image: url("../../assets/images/slider/pharma-mobile.webp");
+}
+@media (min-width: 768px) {
+  .slide-pharma {
+    background-image: url("../../assets/images/slider/pharma.jpg");
+    background-image: url("../../assets/images/slider/pharma.webp");
+  }
+}
+
+.slide-waiting-room {
+  background-image: url("../../assets/images/slider/waiting-room-mobile.jpg");
+  background-image: url("../../assets/images/slider/waiting-room-mobile.webp");
+}
+@media (min-width: 768px) {
+  .slide-waiting-room {
+    background-image: url("../../assets/images/slider/waiting-room.jpg");
+    background-image: url("../../assets/images/slider/waiting-room.webp");
+  }
+}
+
+.slide-grooming {
+  background-image: url("../../assets/images/slider/grooming-mobile.jpg");
+  background-image: url("../../assets/images/slider/grooming-mobile.webp");
+}
+@media (min-width: 768px) {
+  .slide-grooming {
+    background-image: url("../../assets/images/slider/grooming.jpg");
+    background-image: url("../../assets/images/slider/grooming.webp");
+  }
+}
+
+.slide-cat-hotel {
+  background-image: url("../../assets/images/slider/cat-hotel-mobile.jpg");
+  background-image: url("../../assets/images/slider/cat-hotel-mobile.webp");
+}
+@media (min-width: 768px) {
+  .slide-cat-hotel {
+    background-image: url("../../assets/images/slider/cat-hotel.jpg");
+    background-image: url("../../assets/images/slider/cat-hotel.webp");
   }
 }
 
@@ -534,7 +589,7 @@ ol li {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fade-zoom 35s infinite;
+  animation: fade-zoom 30s infinite;
 }
 
 .hero-slide:nth-child(1) {
@@ -555,10 +610,6 @@ ol li {
 
 .hero-slide:nth-child(5) {
   animation-delay: 20s;
-}
-
-.hero-slide:nth-child(6) {
-  animation-delay: 25s;
 }
 
 @keyframes fade-zoom {
@@ -605,10 +656,11 @@ ol li {
 }
 .card .card-image {
   height: 400px;
-  background-color: #e0dfdd;
-  background-image: url(../../assets/images/usluge/ambulance-room.png);
-  background-size: cover;
-  background-position: center center;
+}
+.card .card-image img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 .card .card-image.team {
   background-image: url(../../assets/images/team.png);
