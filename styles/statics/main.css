@@ -656,11 +656,9 @@ ol li {
 }
 .card .card-image {
   height: 400px;
-}
-.card .card-image img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .card .card-image.team {
   background-image: url(../../assets/images/team.png);
@@ -708,13 +706,25 @@ ol li {
   position: relative;
 }
 .about .card-image {
+  overflow: hidden;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
+.about .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .about .tags-wrapper {
   position: absolute;
-  top: 362px;
+  top: 310px;
   left: 24px;
+}
+@media screen and (min-width: 768px) {
+  .about .tags-wrapper {
+    top: 362px;
+  }
 }
 .about .tags-wrapper .tag-default {
   position: relative;
