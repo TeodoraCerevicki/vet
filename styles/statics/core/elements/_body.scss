@@ -10,7 +10,6 @@ body {
     @include fonts.main-font(vars.$font-size-large);
     margin: 0;
     background-color: #e0dfdd;
-    color: vars.$font-color;
 
     * {
         outline: none;
@@ -43,9 +42,10 @@ ul,
 li {
     box-sizing: border-box;
     line-height: 1.5;
-    color: vars.$primary;
+    color: vars.$font-color;
 }
 
 span {
     line-height: inherit;
+    color: inherit;
 }

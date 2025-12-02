@@ -12,7 +12,6 @@ body {
   font-size: 18px;
   margin: 0;
   background-color: #e0dfdd;
-  color: #242424;
 }
 body * {
   outline: none;
@@ -43,11 +42,12 @@ ul,
 li {
   box-sizing: border-box;
   line-height: 1.5;
-  color: #3643ba;
+  color: #6a6565;
 }
 
 span {
   line-height: inherit;
+  color: inherit;
 }
 
 button {
@@ -58,7 +58,7 @@ button {
 }
 
 a {
-  color: #242424;
+  color: #6a6565;
   transition: 0.3s;
   display: inline-block;
   transition: 0.3s;
@@ -66,11 +66,11 @@ a {
   cursor: pointer;
 }
 a:hover, a:hover::before {
-  color: #242424;
+  color: #6a6565;
 }
 @media (hover: hover) {
   a:hover {
-    color: #242424;
+    color: #6a6565;
   }
 }
 
@@ -433,6 +433,7 @@ ol li {
   display: block;
   margin-top: 12px;
   transition: 0.3s ease;
+  color: #3643ba;
   cursor: pointer;
 }
 .sidebar-navigation .sidebar-link.active, .sidebar-navigation .sidebar-link:hover {
@@ -675,6 +676,9 @@ ol li {
 }
 .card .card-image.boskic {
   background-image: url(../../assets/images/team/boskic.jpg);
+}
+.card .card-image.bilja {
+  background-image: url(../../assets/images/team/bilja.jpg);
 }
 .card .card-image.pharma {
   background-image: url(../../assets/images/pharma.png);
@@ -1358,7 +1362,7 @@ ol li {
   font-weight: 600;
 }
 .list .-font-color-light {
-  color: #242424;
+  color: #6a6565;
 }
 
 .-primary {
@@ -1406,13 +1410,13 @@ ol li {
 }
 
 .-font-color {
-  background-color: #242424;
+  background-color: #6a6565;
 }
 .-font-color::before {
   content: "$font-color";
 }
 .-font-color::after {
-  content: "#242424";
+  content: "#6a6565";
   margin-top: 8px;
 }
 

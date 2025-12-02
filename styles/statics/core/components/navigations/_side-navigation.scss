@@ -40,6 +40,7 @@
         display: block;
         margin-top: 12px;
         transition: 0.3s ease;
+        color: vars.$primary;
         cursor: pointer;
 
         &.active,
