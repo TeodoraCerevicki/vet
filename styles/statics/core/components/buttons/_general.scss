@@ -3,7 +3,7 @@
 @use "../../../../dynamics/layouts/alignments/items";
 
 %button {
-	@include fonts.brand-bold-font();
+	@include fonts.main-bold-font();
 	padding: vars.$gap-default 22px;
 	transition: 0.2s;
 	border: 1px solid transparent;

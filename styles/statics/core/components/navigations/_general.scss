@@ -20,7 +20,7 @@
     }
 
     .link {
-        @include fonts.brand-bold-font(vars.$font-size-large);
+        @include fonts.main-medium-font(vars.$font-size-large);
         display: block;
         padding: 8px 16px;
         border-bottom: 1px solid transparent;

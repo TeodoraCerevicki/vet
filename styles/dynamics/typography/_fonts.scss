@@ -18,7 +18,3 @@
 @mixin main-bold-font($size: vars.$font-size-default) {
 	@include -font("Roboto-Bold", $size);
 }
-
-@mixin brand-bold-font($size: vars.$font-size-default) {
-	@include -font("Core-Sans-Bold", $size);
-}

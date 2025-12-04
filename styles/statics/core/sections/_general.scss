@@ -25,7 +25,7 @@
     }
 
     .title {
-        @include fonts.brand-bold-font(vars.$font-size-large);
+        @include fonts.main-medium-font(vars.$font-size-large);
         color: vars.$primary;
 
         @media screen and (max-width: 767px) {

@@ -42,7 +42,7 @@ ul,
 li {
   box-sizing: border-box;
   line-height: 1.5;
-  color: #6a6565;
+  color: #1f2565;
 }
 
 span {
@@ -58,7 +58,7 @@ button {
 }
 
 a {
-  color: #6a6565;
+  color: #1f2565;
   transition: 0.3s;
   display: inline-block;
   transition: 0.3s;
@@ -66,11 +66,11 @@ a {
   cursor: pointer;
 }
 a:hover, a:hover::before {
-  color: #6a6565;
+  color: #1f2565;
 }
 @media (hover: hover) {
   a:hover {
-    color: #6a6565;
+    color: #1f2565;
   }
 }
 
@@ -92,7 +92,7 @@ h1 {
 }
 
 .default-title {
-  font-family: "Core-Sans-Bold";
+  font-family: "Roboto-Medium";
   font-size: 26px;
   padding: 8px;
   color: #fff;
@@ -173,7 +173,7 @@ ol li {
 .button-stroked,
 .button-flat,
 .button-fab {
-  font-family: "Core-Sans-Bold";
+  font-family: "Roboto-Bold";
   font-size: 16px;
   padding: 16px 22px;
   transition: 0.2s;
@@ -305,7 +305,7 @@ ol li {
   height: 80px;
 }
 .main-nav-wrapper .link {
-  font-family: "Core-Sans-Bold";
+  font-family: "Roboto-Medium";
   font-size: 18px;
   display: block;
   padding: 8px 16px;
@@ -427,18 +427,19 @@ ol li {
   display: block;
 }
 .sidebar-navigation .sidebar-link {
-  font-family: "Core-Sans-Bold";
+  font-family: "Roboto-Medium";
   font-size: 16px;
   position: relative;
   display: block;
   margin-top: 12px;
+  border-bottom: 1px solid transparent;
   transition: 0.3s ease;
   color: #3643ba;
   cursor: pointer;
 }
 .sidebar-navigation .sidebar-link.active, .sidebar-navigation .sidebar-link:hover {
   padding-left: 12px;
-  border-bottom: 1px solid #3643ba;
+  border-bottom-color: #3643ba;
   transition: 0.3s ease;
 }
 
@@ -471,7 +472,7 @@ ol li {
   }
 }
 .hero .hero-title {
-  font-family: "Core-Sans-Bold";
+  font-family: "Roboto-Medium";
   font-size: 22px;
   padding: 16px;
   border-radius: 8px;
@@ -768,7 +769,7 @@ ol li {
   height: fit-content;
 }
 .main-footer .footer-subtitle {
-  font-family: "Core-Sans-Bold";
+  font-family: "Roboto-Medium";
   font-size: 18px;
 }
 .main-footer .copy-rights {
@@ -856,7 +857,7 @@ ol li {
   justify-content: start;
 }
 .contact-block .title {
-  font-family: "Core-Sans-Bold";
+  font-family: "Roboto-Medium";
   font-size: 18px;
   color: #3643ba;
 }
@@ -1037,7 +1038,7 @@ ol li {
 }
 
 .brand-font-bold {
-  font-family: "Core-Sans-Bold";
+  font-family: "Roboto-Medium";
   font-size: 16px;
 }
 
@@ -1362,7 +1363,7 @@ ol li {
   font-weight: 600;
 }
 .list .-font-color-light {
-  color: #6a6565;
+  color: #1f2565;
 }
 
 .-primary {
@@ -1410,13 +1411,13 @@ ol li {
 }
 
 .-font-color {
-  background-color: #6a6565;
+  background-color: #1f2565;
 }
 .-font-color::before {
   content: "$font-color";
 }
 .-font-color::after {
-  content: "#6a6565";
+  content: "#1f2565";
   margin-top: 8px;
 }
 

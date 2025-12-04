@@ -25,7 +25,7 @@
   }
 
   .hero-title {
-    @include fonts.brand-bold-font(22px);
+    @include fonts.main-medium-font(22px);
     @include blocks.default();
 
     @media screen and (min-width: 768px) {

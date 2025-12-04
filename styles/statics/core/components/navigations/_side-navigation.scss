@@ -35,10 +35,11 @@
     }
 
     .sidebar-link {
-        @include fonts.brand-bold-font();
+        @include fonts.main-medium-font();
         position: relative;
         display: block;
         margin-top: 12px;
+        border-bottom: 1px solid transparent;
         transition: 0.3s ease;
         color: vars.$primary;
         cursor: pointer;
@@ -46,7 +47,7 @@
         &.active,
         &:hover {
             padding-left: 12px;
-            border-bottom: 1px solid vars.$primary;
+            border-bottom-color: vars.$primary;
             transition: 0.3s ease;
         }
     }

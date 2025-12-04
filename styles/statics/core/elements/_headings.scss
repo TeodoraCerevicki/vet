@@ -18,7 +18,7 @@ h1 {
 }
 
 .default-title {
-	@include fonts.brand-bold-font(26px);
+	@include fonts.main-medium-font(26px);
 	padding: vars.$gap-small;
 	color: vars.$font-color-light;
 	background-color: vars.$primary;
