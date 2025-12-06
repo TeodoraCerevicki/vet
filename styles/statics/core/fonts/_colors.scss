@@ -1,0 +1,5 @@
+@use "../../../dynamics/variables" as vars;
+
+.color-primary {
+    color: vars.$primary;
+}

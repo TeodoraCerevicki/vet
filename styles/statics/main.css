@@ -169,6 +169,10 @@ ol li {
   font-weight: 700;
   src: url("../../assets/fonts/Core-Sans/Core-Sans-Bold.ttf");
 }
+.color-primary {
+  color: #3643ba;
+}
+
 .button-basic,
 .button-stroked,
 .button-flat,
