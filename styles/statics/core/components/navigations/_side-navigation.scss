@@ -1,6 +1,9 @@
 @use "../../../../dynamics/variables" as vars;
 @use "../../../../dynamics/typography/fonts";
 
+$navigation-height: 80px;
+$header-height: 55px;
+
 .sidebar-navigation {
     box-shadow: vars.$shadow-default;
 
@@ -23,6 +26,8 @@
 
     .sidebar-navigation-list {
         display: none;
+        height: calc(100vh - #{$header-height} - #{$navigation-height});
+        overflow-y: auto;
         padding: 12px vars.$gap-default vars.$gap-large;
 
         @media screen and (min-width: 768px) {
