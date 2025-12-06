@@ -665,6 +665,8 @@ ol li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-image: url(../../assets/images/usluge/ambulanta.jpg);
+  background-image: url(../../assets/images/usluge/ambulanta.webp);
 }
 .card .card-image.team {
   background-image: url(../../assets/images/team.png);
@@ -672,36 +674,47 @@ ol li {
 }
 .card .card-image.milos {
   background-image: url(../../assets/images/team/milos.jpg);
+  background-image: url(../../assets/images/team/milos.webp);
 }
 .card .card-image.rale {
   background-image: url(../../assets/images/team/rale.jpg);
+  background-image: url(../../assets/images/team/rale.webp);
 }
 .card .card-image.igor {
   background-image: url(../../assets/images/team/igor.jpg);
+  background-image: url(../../assets/images/team/igor.webp);
 }
 .card .card-image.boskic {
   background-image: url(../../assets/images/team/boskic.jpg);
+  background-image: url(../../assets/images/team/boskic.webp);
 }
 .card .card-image.bilja {
   background-image: url(../../assets/images/team/bilja.jpg);
+  background-image: url(../../assets/images/team/bilja.webp);
 }
 .card .card-image.pharma {
-  background-image: url(../../assets/images/pharma.png);
+  background-image: url(../../assets/images/slider/pharma.jpg);
+  background-image: url(../../assets/images/slider/pharma.webp);
 }
 .card .card-image.hotel {
-  background-image: url(../../assets/images/usluge/cat-hotel-4.png);
+  background-image: url(../../assets/images/usluge/cat-hotel-4.jpg);
+  background-image: url(../../assets/images/usluge/cat-hotel-4.webp);
 }
 .card .card-image.grooming {
-  background-image: url(../../assets/images/usluge/groomin.png);
+  background-image: url(../../assets/images/usluge/grooming.jpg);
+  background-image: url(../../assets/images/usluge/grooming.webp);
 }
 .card .card-image.laboratorija {
-  background-image: url(../../assets/images/usluge/lab.png);
+  background-image: url(../../assets/images/usluge/lab.jpg);
+  background-image: url(../../assets/images/usluge/lab.webp);
 }
-.card .card-image.porodiliste {
-  background-image: url(../../assets/images/usluge/porodiljski.png);
+.card .card-image.ultrazvuk {
+  background-image: url(../../assets/images/usluge/porodiljski.jpg);
+  background-image: url(../../assets/images/usluge/porodiljski.webp);
 }
 .card .card-image.egzoticne-zivotinje {
-  background-image: url(../../assets/images/usluge/ptica.png);
+  background-image: url(../../assets/images/usluge/ptica.jpg);
+  background-image: url(../../assets/images/usluge/ptica.webp);
 }
 .card .card-content {
   padding: 24px;
@@ -1132,6 +1145,10 @@ ol li {
 
 .w-300 {
   width: 300px;
+}
+
+.lead {
+  max-width: 700px;
 }
 
 .mt-1 {

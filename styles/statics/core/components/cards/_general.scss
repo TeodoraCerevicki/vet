@@ -18,6 +18,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        background-image: url(../../assets/images/usluge/ambulanta.jpg);
+        background-image: url(../../assets/images/usluge/ambulanta.webp);
 
         &.team {
             background-image: url(../../assets/images/team.png);
@@ -26,46 +28,57 @@
 
         &.milos {
             background-image: url(../../assets/images/team/milos.jpg);
+            background-image: url(../../assets/images/team/milos.webp);
         }
 
         &.rale {
             background-image: url(../../assets/images/team/rale.jpg);
+            background-image: url(../../assets/images/team/rale.webp);
         }
 
         &.igor {
             background-image: url(../../assets/images/team/igor.jpg);
+            background-image: url(../../assets/images/team/igor.webp);
         }
 
         &.boskic {
             background-image: url(../../assets/images/team/boskic.jpg);
+            background-image: url(../../assets/images/team/boskic.webp);
         }
 
         &.bilja {
             background-image: url(../../assets/images/team/bilja.jpg);
+            background-image: url(../../assets/images/team/bilja.webp);
         }
 
         &.pharma {
-            background-image: url(../../assets/images/pharma.png);
+            background-image: url(../../assets/images/slider/pharma.jpg);
+            background-image: url(../../assets/images/slider/pharma.webp);
         }
 
         &.hotel {
-            background-image: url(../../assets/images/usluge/cat-hotel-4.png);
+            background-image: url(../../assets/images/usluge/cat-hotel-4.jpg);
+            background-image: url(../../assets/images/usluge/cat-hotel-4.webp);
         }
 
         &.grooming {
-            background-image: url(../../assets/images/usluge/groomin.png);
+            background-image: url(../../assets/images/usluge/grooming.jpg);
+            background-image: url(../../assets/images/usluge/grooming.webp);
         }
 
         &.laboratorija {
-            background-image: url(../../assets/images/usluge/lab.png);
+            background-image: url(../../assets/images/usluge/lab.jpg);
+            background-image: url(../../assets/images/usluge/lab.webp);
         }
 
-        &.porodiliste {
-            background-image: url(../../assets/images/usluge/porodiljski.png);
+        &.ultrazvuk {
+            background-image: url(../../assets/images/usluge/porodiljski.jpg);
+            background-image: url(../../assets/images/usluge/porodiljski.webp);
         }
 
         &.egzoticne-zivotinje {
-            background-image: url(../../assets/images/usluge/ptica.png);
+            background-image: url(../../assets/images/usluge/ptica.jpg);
+            background-image: url(../../assets/images/usluge/ptica.webp);
         }
     }
 
