@@ -9,7 +9,6 @@
 }
 
 .card {
-    @include blocks.default(rgba(vars.$bg-lightest, 0.55));
     padding: 0;
     border-radius: 0;
 
@@ -84,14 +83,5 @@
             background-image: url(../../assets/images/usluge/ptica.jpg);
             background-image: url(../../assets/images/usluge/ptica.webp);
         }
-    }
-
-    .card-content {
-        padding: 24px;
-    }
-
-    .contact-block {
-        margin: 0;
-        padding: 0;
     }
 }

@@ -9,7 +9,7 @@ body {
 body {
     @include fonts.main-font(vars.$font-size-large);
     margin: 0;
-    background-color: #e0dfdd;
+    background-color: vars.$bg-lightest;
 
     * {
         outline: none;

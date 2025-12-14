@@ -11,7 +11,7 @@ body {
   font-family: "Roboto-Regular";
   font-size: 18px;
   margin: 0;
-  background-color: #e0dfdd;
+  background-color: #fff;
 }
 body * {
   outline: none;
@@ -92,12 +92,9 @@ h1 {
 }
 
 .default-title {
-  font-family: "Roboto-Medium";
-  font-size: 26px;
-  padding: 8px;
-  color: #ddd0c8;
-  background-color: #323232;
-  text-align: center;
+  font-family: "Roboto-Regular";
+  font-size: 42px;
+  color: #245f73;
 }
 
 ul {
@@ -187,7 +184,7 @@ ol li {
   border-radius: 8px;
   text-align: center;
   text-transform: uppercase;
-  color: #ddd0c8;
+  color: #f2f0ef;
   letter-spacing: 1.2px;
 }
 .button-basic:disabled,
@@ -199,7 +196,7 @@ ol li {
 .disabled.button-fab {
   background-color: #8e8f8f !important;
   cursor: not-allowed;
-  color: #ddd0c8;
+  color: #f2f0ef;
 }
 .small.button-basic,
 .small.button-stroked,
@@ -230,7 +227,7 @@ ol li {
 .button-stroked:hover,
 .button-flat:hover,
 .button-fab:hover {
-  color: #ddd0c8;
+  color: #f2f0ef;
 }
 
 .button-basic:hover {
@@ -244,7 +241,7 @@ ol li {
 .button-flat,
 .button-fab {
   background-color: var(--background-color);
-  color: #ddd0c8;
+  color: #f2f0ef;
 }
 
 .button-fab {
@@ -408,7 +405,7 @@ ol li {
   position: absolute;
   right: 16px;
   font-size: 30px;
-  color: #ddd0c8;
+  color: #f2f0ef;
 }
 .sidebar-navigation .side-button.open {
   transform: rotate(180deg);
@@ -621,22 +618,8 @@ ol li {
 }
 
 .card {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.55);
-  color: #323232;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(25px);
-          backdrop-filter: blur(25px);
-  overflow: hidden;
   padding: 0;
   border-radius: 0;
-}
-.card .icon {
-  color: #245f73;
-}
-.card .title {
-  margin-bottom: 8px;
 }
 .card .card-image {
   height: 300px;
@@ -698,13 +681,6 @@ ol li {
 .card .card-image.egzoticne-zivotinje {
   background-image: url(../../assets/images/usluge/ptica.jpg);
   background-image: url(../../assets/images/usluge/ptica.webp);
-}
-.card .card-content {
-  padding: 24px;
-}
-.card .contact-block {
-  margin: 0;
-  padding: 0;
 }
 
 .about {
@@ -779,7 +755,7 @@ ol li {
   font-size: 14px;
 }
 .main-footer .copy-rights .text {
-  color: #ddd0c8;
+  color: #f2f0ef;
 }
 
 .tag-xs, .tag-default, .tag-small {
@@ -788,7 +764,7 @@ ol li {
   justify-content: center;
   background: #245f73;
   border-radius: 8px;
-  color: #ddd0c8;
+  color: #f2f0ef;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .-round.tag-xs, .-round.tag-default, .-round.tag-small {
@@ -883,7 +859,7 @@ ol li {
 }
 .contact-block-icon-wrapper .icon {
   font-size: 24px;
-  color: #ddd0c8;
+  color: #f2f0ef;
 }
 @media screen and (min-width: 768px) {
   .contact-block-icon-wrapper {
@@ -962,32 +938,17 @@ ol li {
   padding: 0 9px;
 }
 
-.introduction-wrapper {
-  padding: 16px 0;
-  background-color: #f2f0ef;
+.introduction {
+  margin-top: 64px;
+}
+.introduction .introduction-image,
+.introduction .introduction-text {
+  padding: 0 16px;
 }
 @media screen and (min-width: 768px) {
-  .introduction-wrapper {
-    padding: 64px 0;
+  .introduction .introduction-image {
+    height: 400px;
   }
-}
-
-.introduction {
-  display: flex;
-  flex-direction: column;
-}
-
-.introduction .card {
-  height: 100%;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-}
-.introduction .card .card-content {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .service-page {
@@ -1382,7 +1343,7 @@ ol li {
   justify-content: center;
   padding: 32px;
   box-sizing: border-box;
-  color: #ddd0c8;
+  color: #f2f0ef;
   font-weight: 600;
 }
 .list .-font-color-light {
@@ -1423,12 +1384,12 @@ ol li {
 }
 
 .-font-color-light {
-  background-color: #ddd0c8;
+  background-color: #f2f0ef;
 }
 .-font-color-light::before {
   content: "$font-color-light";
 }
 .-font-color-light::after {
-  content: "#ddd0c8";
+  content: "#f2f0ef";
   margin-top: 8px;
 }/*# sourceMappingURL=main.css.map */

@@ -18,9 +18,6 @@ h1 {
 }
 
 .default-title {
-	@include fonts.main-medium-font(26px);
-	padding: vars.$gap-small;
-	color: vars.$font-color-light;
-	background-color: vars.$primary;
-	text-align: center;
+	@include fonts.main-font(42px);
+	color: vars.$accent;
 }

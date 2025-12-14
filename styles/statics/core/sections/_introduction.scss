@@ -1,29 +1,20 @@
 @use "../../../dynamics/variables" as vars;
-
-.introduction-wrapper {
-    padding: vars.$gap-default 0;
-    background-color: vars.$bg-default;
-
-    @media screen and (min-width: 768px) {
-        padding: vars.$gap-xl 0;
-    }
-}
+@use "../../../dynamics/typography/fonts";
+@use "../../../dynamics/layouts/alignments/items" as align;
+@use "../../../dynamics/components/blocks/general" as blocks;
+@use "../../../dynamics/typography/modification" as modification;
 
 .introduction {
-    display: flex;
-    flex-direction: column;
-}
+    margin-top: vars.$gap-xl;
 
-.introduction .card {
-    height: 100%;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
+    .introduction-image,
+    .introduction-text {
+        padding: 0 vars.$gap-default;
+    }
 
-    .card-content {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .introduction-image {
+        @media screen and (min-width: 768px) {
+            height: 400px;
+        }
     }
 }
