@@ -3,10 +3,10 @@
 @use "../../../../dynamics/typography/fonts";
 
 .main-footer {
+    position: relative;
+    z-index: 200;
     border-top: 2px solid #c3c3c2;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url(../../assets/images/footer-image.png);
-    background-position: center center;
-    background-size: cover;
+    background-color: vars.$primary;
 
     .contact-block {
         padding: 0;
@@ -14,6 +14,7 @@
     }
     .block {
         height: fit-content;
+        border-radius: 0;
     }
 
     .footer-subtitle {

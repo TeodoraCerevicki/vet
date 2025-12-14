@@ -1,13 +1,5 @@
 @use "../../../dynamics/variables" as vars;
 
-.inner-page {
-    .main-nav-wrapper {
-        position: relative;
-        left: 0;
-        transform: none;
-    }
-}
-
 .service-page {
     display: grid;
     grid-template-rows: auto 1fr auto;

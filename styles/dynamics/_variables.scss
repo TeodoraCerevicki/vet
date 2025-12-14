@@ -1,16 +1,13 @@
-$primary: #3643ba;
-$primary-light: #b1acc1;
+$primary: #323232;
+$primary-light: #effafd;
 
-$accent: #f58220;
-$accent-dark: #607981;
-$accent-light: #add8e6;
+$accent: #245f73;
 
-$warn: #d92946;
+$font-color: #323232;
+$font-color-light: #ddd0c8;
+$font-color-lightest: #fff;
 
-$font-color: #1f2565;
-$font-color-light: #fff;
-
-$bg-default: #e0dfdd;
+$bg-default: #f2f0ef;
 $bg-lightest: #fff;
 
 $disabled: #8e8f8f;
@@ -25,7 +22,7 @@ $gap-small: calc($gap-default / 2);
 $gap-large: calc($gap-default * 2);
 $gap-xl: calc($gap-default * 4);
 
-$default-border: 1px solid #424445;
+$default-border: 1px solid #245f73;
 $radius-default: 8px;
 
 $shadow-default: 0 4px 4px 0 rgba(0, 0, 0, 0.25);

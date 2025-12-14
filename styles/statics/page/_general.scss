@@ -53,28 +53,14 @@ $parameters: (
 	primary: (
 		colour: vars.$primary
 	),
-	// primary-light: (colour: vars.$primary-light),
-	accent:
-		(
-			colour: vars.$accent
-		),
-	accent-light: (
-		colour: vars.$accent-light
-	),
-	accent-dark: (
-		colour: vars.$accent-dark
+	accent: (
+		colour: vars.$accent
 	),
 	font-color: (
 		colour: vars.$font-color
 	),
 	font-color-light: (
 		colour: vars.$font-color-light
-	),
-	warn: (
-		colour: vars.$warn
-	),
-	disabled: (
-		colour: vars.$disabled
 	)
 );
 

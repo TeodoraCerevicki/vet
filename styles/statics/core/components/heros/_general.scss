@@ -5,10 +5,12 @@
 @use "../../../../dynamics/typography/fonts";
 
 .hero {
-  @include align.align-center();
+  display: flex;
+  align-items: end;
   position: relative;
   overflow: hidden;
   height: 100vh;
+  padding-bottom: vars.$gap-large;
 
   .hero-image {
     @include absolute.position();
@@ -24,19 +26,24 @@
     }
   }
 
+  .hero-title,
+  .hero-subtitle {
+    color: vars.$font-color-lightest;
+  }
+
   .hero-title {
     @include fonts.main-medium-font(22px);
-    @include blocks.default();
+    display: inline-block;
+    border-bottom: 3px solid #fff;
 
     @media screen and (min-width: 768px) {
-      font-size: 40px;
+      font-size: 60px;
     }
   }
 
-  .hero-title-width {
-    @media screen and (min-width: 510px) {
-      width: 486px;
-    }
+  .hero-subtitle {
+    @include fonts.main-medium-font(22px);
+    display: block;
   }
 }
 
@@ -104,12 +111,12 @@
   z-index: -1;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
 
-  .overlay {
-    @include absolute.position();
-    background-color: rgba(0, 0, 0, 0.2);
-  }
+  // .overlay {
+  //   @include absolute.position();
+  //   background-color: rgba(0, 0, 0, 0.2);
+  // }
 }
 
 .hero-slide {

@@ -108,3 +108,28 @@
         z-index: 1;
     }
 }
+
+.emergency {
+    position: fixed;
+    z-index: 100;
+    right: 60px;
+    bottom: 60px;
+    overflow: hidden;
+    padding: vars.$gap-small vars.$gap-large vars.$gap-small 50px;
+    border-radius: 38px;
+    background-color: vars.$bg-lightest;
+    border: vars.$default-border;
+
+    .icon {
+        position: absolute;
+        left: 0;
+        background: vars.$accent;
+        color: vars.$bg-default;
+        font-size: 25px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 9px;
+    }
+}

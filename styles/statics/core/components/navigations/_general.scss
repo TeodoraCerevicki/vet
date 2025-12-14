@@ -7,13 +7,15 @@
     @include blocks.default();
     @include align.space-between();
     overflow: unset;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 1000;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
     margin-top: vars.$gap-small;
     padding: 0;
+    background-color: vars.$bg-default;
 
     .company-logo {
         height: 80px;
@@ -29,10 +31,11 @@
         font-size: 18px;
         text-align: center;
         cursor: pointer;
+        color: vars.$accent;
 
         &:hover,
         &.active {
-            border-bottom-color: vars.$primary;
+            border-bottom-color: vars.$accent;
         }
     }
 }
@@ -73,15 +76,15 @@
     margin-right: vars.$gap-default;
     padding: 12px;
     border-radius: vars.$radius-default;
-    background: vars.$primary;
-    color: vars.$font-color-light !important;
+    background: vars.$accent;
+    color: vars.$font-color-lightest !important;
     font-size: 20px;
 
     &:hover {
-        background-color: vars.$accent;
+        background-color: vars.$primary;
 
         &::before {
-            color: vars.$font-color-light !important;
+            color: vars.$font-color-lightest !important;
         }
     }
 }

@@ -22,12 +22,6 @@
 		color: vars.$font-color-light;
 	}
 
-	&.warn {
-		background-color: vars.$warn !important;
-		border-color: vars.$warn !important;
-		color: vars.$font-color-light !important;
-	}
-
 	&.small {
 		padding: vars.$gap-small;
 	}
