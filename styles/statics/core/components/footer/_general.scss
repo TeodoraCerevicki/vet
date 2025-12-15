@@ -60,6 +60,12 @@
         margin-top: vars.$gap-default;
         font-size: vars.$font-size-default;
         color: vars.$font-color-lightest;
+
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
     }
 
     .working-hours {

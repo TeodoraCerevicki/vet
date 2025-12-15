@@ -699,6 +699,9 @@ ol li {
   font-size: 16px;
   color: #fff;
 }
+.main-footer .contact-link:hover span {
+  text-decoration: underline;
+}
 .main-footer .working-hours {
   font-size: 16px;
 }
