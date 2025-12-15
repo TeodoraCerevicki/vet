@@ -2,98 +2,18 @@
 @use "../../../../dynamics/typography/fonts";
 @use "../../../../dynamics/layouts/alignments/items";
 
-%button {
-	@include fonts.main-bold-font();
-	padding: vars.$gap-default 22px;
-	transition: 0.2s;
-	border: 1px solid transparent;
-	line-height: 1.1;
-	box-shadow: vars.$shadow-default;
-	border-radius: vars.$radius-default;
-	text-align: center;
-	text-transform: uppercase;
-	color: vars.$font-color-light;
-	letter-spacing: 1.2px;
-
-	&:disabled,
-	&.disabled {
-		background-color: vars.$disabled !important;
-		cursor: not-allowed;
-		color: vars.$font-color-light;
-	}
-
-	&.small {
-		padding: vars.$gap-small;
-	}
-}
-
-.button-primary {
-	--background-color: #{vars.$primary};
-	--border-color: #{vars.$primary};
-	--color: #{vars.$primary};
+.button-default {
+	@include fonts.main-medium-font();
+	display: inline-flex;
+	align-items: center;
+	padding: vars.$gap-default vars.$gap-large;
+	border-radius: 38px;
+	background-color: vars.$accent;
+	border: vars.$default-border;
+	color: vars.$font-color-lightest;
 
 	&:hover {
-		background-color: vars.$accent;
-	}
-}
-
-.button-accent {
-	--background-color: #{vars.$accent};
-	--border-color: #{vars.$accent};
-}
-
-.button-basic,
-.button-stroked,
-.button-flat,
-.button-fab {
-	@extend %button;
-}
-
-.button-basic,
-.button-stroked {
-	color: var(--color);
-}
-
-.button-stroked,
-.button-flat,
-.button-fab {
-	&:hover {
-		color: vars.$font-color-light;
-	}
-}
-
-.button-basic {
-	&:hover {
-		border-color: var(--border-color);
-	}
-}
-
-.button-stroked {
-	border: 1px solid var(--border-color);
-}
-
-.button-flat,
-.button-fab {
-	background-color: var(--background-color);
-	color: vars.$font-color-light;
-}
-
-.button-fab {
-	@include items.align-center();
-
-	&_text {
-		display: block;
-		margin-left: vars.$gap-small;
-		font-size: 16px;
-	}
-
-	&.-responsive {
-		.button-fab_text {
-			display: none;
-
-			@media screen and (min-width: 1024px) {
-				display: block;
-			}
-		}
+		background-color: vars.$accent-darker;
+		color: vars.$font-color-lightest;
 	}
 }
