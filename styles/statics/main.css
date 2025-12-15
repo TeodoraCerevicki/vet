@@ -170,6 +170,14 @@ ol li {
   color: #323232;
 }
 
+.color-lightest {
+  color: #fff;
+}
+
+.color-accent-darker {
+  color: #143845;
+}
+
 .icon-size-default {
   font-size: 24px;
 }
@@ -270,21 +278,6 @@ ol li {
   .main-nav .list {
     flex-direction: row;
   }
-}
-
-.link-icon {
-  margin-right: 16px;
-  padding: 12px;
-  border-radius: 8px;
-  background: #245f73;
-  color: #fff !important;
-  font-size: 20px;
-}
-.link-icon:hover {
-  background-color: #323232;
-}
-.link-icon:hover::before {
-  color: #fff !important;
 }
 
 .icon-menu,
@@ -659,24 +652,59 @@ ol li {
   position: relative;
   z-index: 200;
   border-top: 2px solid #c3c3c2;
-  background-color: #323232;
+  background-color: #245f73;
 }
-.main-footer .contact-block {
-  padding: 0;
-  margin: 0;
+.main-footer .footer-main-title,
+.main-footer .footer-title,
+.main-footer .footer-subtitle {
+  color: #fff;
 }
-.main-footer .block {
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 0;
+.main-footer .footer-main-title {
+  font-family: "Roboto-Medium";
+  font-size: 40px;
+  color: #fff;
+}
+.main-footer .footer-title {
+  font-family: "Roboto-Regular";
+  font-size: 24px;
 }
 .main-footer .footer-subtitle {
-  font-family: "Roboto-Medium";
   font-size: 18px;
+}
+.main-footer .social-list {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #fff;
+}
+.main-footer .link-icon {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 8px;
+  background: #143845;
+  color: #fff !important;
+  font-size: 20px;
+}
+.main-footer .link-icon:hover::before {
+  color: #fff !important;
+}
+.main-footer .link-icon.-small {
+  font-size: 16px;
+}
+.main-footer .contact-link {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #fff;
+}
+.main-footer .working-hours {
+  font-size: 16px;
 }
 .main-footer .copy-rights {
   padding: 8px 0;
-  background-color: #323232;
+  background-color: #143845;
   font-size: 14px;
 }
 .main-footer .copy-rights .text {

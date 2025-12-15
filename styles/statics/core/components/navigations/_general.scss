@@ -72,23 +72,6 @@
     }
 }
 
-.link-icon {
-    margin-right: vars.$gap-default;
-    padding: 12px;
-    border-radius: vars.$radius-default;
-    background: vars.$accent;
-    color: vars.$font-color-lightest !important;
-    font-size: 20px;
-
-    &:hover {
-        background-color: vars.$primary;
-
-        &::before {
-            color: vars.$font-color-lightest !important;
-        }
-    }
-}
-
 .icon-menu,
 .icon-xmark {
     font-size: 26px;

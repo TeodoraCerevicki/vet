@@ -3,3 +3,11 @@
 .color-primary {
     color: vars.$primary;
 }
+
+.color-lightest {
+    color: vars.$font-color-lightest;
+}
+
+.color-accent-darker {
+    color: vars.$accent-darker;
+}

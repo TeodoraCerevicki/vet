@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?sc5mzx');
-  src:  url('fonts/icomoon.eot?sc5mzx#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?sc5mzx') format('truetype'),
-    url('fonts/icomoon.woff?sc5mzx') format('woff'),
-    url('fonts/icomoon.svg?sc5mzx#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2un63f');
+  src:  url('fonts/icomoon.eot?2un63f#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2un63f') format('truetype'),
+    url('fonts/icomoon.woff?2un63f') format('woff'),
+    url('fonts/icomoon.svg?2un63f#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -66,6 +66,9 @@
 }
 .icon-tiktok:before {
   content: "\e904";
+}
+.icon-mail:before {
+  content: "\e910";
 }
 .icon-phone:before {
   content: "\e900";
