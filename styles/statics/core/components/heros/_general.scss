@@ -77,15 +77,15 @@
   }
 }
 
-.slide-grooming {
-  background-image: url("../../assets/images/slider/grooming-mobile.jpg");
-  background-image: url("../../assets/images/slider/grooming-mobile.webp");
+// .slide-grooming {
+//   background-image: url("../../assets/images/slider/grooming-mobile.jpg");
+//   background-image: url("../../assets/images/slider/grooming-mobile.webp");
 
-  @media (min-width: 768px) {
-    background-image: url("../../assets/images/slider/grooming.jpg");
-    background-image: url("../../assets/images/slider/grooming.webp");
-  }
-}
+//   @media (min-width: 768px) {
+//     background-image: url("../../assets/images/slider/grooming.jpg");
+//     background-image: url("../../assets/images/slider/grooming.webp");
+//   }
+// }
 
 .slide-cat-hotel {
   background-image: url("../../assets/images/slider/cat-hotel-mobile.jpg");
@@ -111,12 +111,6 @@
   z-index: -1;
   width: 100%;
   height: 100vh;
-  // overflow: hidden;
-
-  // .overlay {
-  //   @include absolute.position();
-  //   background-color: rgba(0, 0, 0, 0.2);
-  // }
 }
 
 .hero-slide {
@@ -127,7 +121,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
-  animation: fade-zoom 30s infinite;
+  animation: fade-zoom 20s infinite;
 }
 
 .hero-slide:nth-child(1) {
@@ -141,9 +135,6 @@
 }
 .hero-slide:nth-child(4) {
   animation-delay: 15s;
-}
-.hero-slide:nth-child(5) {
-  animation-delay: 20s;
 }
 
 @keyframes fade-zoom {
