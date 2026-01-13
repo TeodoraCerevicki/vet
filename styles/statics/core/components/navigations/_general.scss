@@ -4,18 +4,33 @@
 @use "../../../../dynamics/components/blocks/general" as blocks;
 
 .main-nav-wrapper {
-    @include blocks.default();
     @include align.space-between();
     overflow: unset;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1000;
+    max-width: 1380px;
     width: 100%;
-    margin-top: vars.$gap-small;
+    margin: vars.$gap-small auto 0;
     padding: 0;
     background-color: vars.$bg-default;
+    box-shadow: vars.$shadow-default;
+
+    &:not(.sticky) .container {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        max-width: unset;
+        margin: 0;
+        background-color: vars.$bg-lightest;
+    }
 
     .company-logo {
         height: 80px;

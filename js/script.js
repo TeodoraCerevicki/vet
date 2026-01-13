@@ -102,6 +102,19 @@ $(function () {
         activateSection(menuItems[0]);
     }
 
+    window.addEventListener("scroll", () => {
+        const nav = document.getElementById("mainNav");
+        const hero = document.querySelector(".hero");
+        const scrollTrigger = hero.offsetHeight;
+
+        if (window.pageYOffset >= scrollTrigger) {
+            nav.classList.add("sticky");
+        } else {
+            nav.classList.remove("sticky");
+        }
+    });
+
+
     // const modal = document.getElementById('imageModal');
     // const modalCarousel = document.getElementById('modalCarousel');
 

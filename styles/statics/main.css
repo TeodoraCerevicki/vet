@@ -199,35 +199,35 @@ ol li {
 }
 
 .main-nav-wrapper {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #323232;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(25px);
-          backdrop-filter: blur(25px);
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   overflow: unset;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1000;
+  max-width: 1380px;
   width: 100%;
-  margin-top: 8px;
+  margin: 8px auto 0;
   padding: 0;
   background-color: #f2f0ef;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.main-nav-wrapper .icon {
-  color: #245f73;
+.main-nav-wrapper:not(.sticky) .container {
+  margin-right: 0;
+  margin-left: 0;
 }
-.main-nav-wrapper .title {
-  margin-bottom: 8px;
+.main-nav-wrapper.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: unset;
+  margin: 0;
+  background-color: #fff;
 }
 .main-nav-wrapper .company-logo {
   height: 80px;
