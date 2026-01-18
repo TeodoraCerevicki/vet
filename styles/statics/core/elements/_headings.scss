@@ -18,6 +18,10 @@ h1 {
 }
 
 .default-title {
-	@include fonts.main-font(42px);
+	@include fonts.main-font(32px);
 	color: vars.$accent;
+
+	@media screen and (min-width: 768px) {
+		@include fonts.main-font(42px);
+	}
 }

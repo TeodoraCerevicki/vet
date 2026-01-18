@@ -33,7 +33,11 @@
     }
 
     .company-logo {
-        height: 80px;
+        height: 60px;
+
+        @media screen and (min-width: 992px) {
+            height: 80px;
+        }
     }
 
     .link {

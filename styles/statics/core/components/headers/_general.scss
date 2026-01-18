@@ -5,7 +5,7 @@
     display: flex;
     justify-content: end;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 60px;
     height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +15,10 @@
 
     @media screen and (min-width: 768px) {
         height: 400px;
+    }
+
+    @media screen and (min-width: 992px) {
+        margin-top: 80px;
     }
 
     &.team {

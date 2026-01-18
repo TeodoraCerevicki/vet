@@ -93,8 +93,14 @@ h1 {
 
 .default-title {
   font-family: "Roboto-Regular";
-  font-size: 42px;
+  font-size: 32px;
   color: #245f73;
+}
+@media screen and (min-width: 768px) {
+  .default-title {
+    font-family: "Roboto-Regular";
+    font-size: 42px;
+  }
 }
 
 ul {
@@ -230,7 +236,12 @@ ol li {
   background-color: #fff;
 }
 .main-nav-wrapper .company-logo {
-  height: 80px;
+  height: 60px;
+}
+@media screen and (min-width: 992px) {
+  .main-nav-wrapper .company-logo {
+    height: 80px;
+  }
 }
 .main-nav-wrapper .link {
   font-family: "Roboto-Medium";
@@ -592,12 +603,17 @@ ol li {
 .about .image {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 300px;
   overflow: hidden;
   transition: filter 0.3s ease;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
+}
+@media screen and (min-width: 768px) {
+  .about .image {
+    height: 500px;
+  }
 }
 .about .image.milos {
   background-image: url(../../assets/images/team/milos.jpg);
@@ -635,13 +651,23 @@ ol li {
   right: 29%;
 }
 .about:hover .tag-top {
-  top: 0;
+  top: -8px;
   right: -32px;
+}
+@media screen and (min-width: 768px) {
+  .about:hover .tag-top {
+    top: 0;
+  }
 }
 .about:hover .tag-bottom {
   top: unset;
   right: -32px;
-  bottom: -3px;
+  bottom: -8px;
+}
+@media screen and (min-width: 768px) {
+  .about:hover .tag-bottom {
+    bottom: -3px;
+  }
 }
 
 .main-footer {
@@ -735,9 +761,15 @@ ol li {
 }
 
 .tag-default {
-  width: 76px;
-  height: 76px;
+  width: 50px;
+  height: 50px;
   font-size: 26px;
+}
+@media screen and (min-width: 768px) {
+  .tag-default {
+    width: 76px;
+    height: 76px;
+  }
 }
 
 .tag-xs {
@@ -751,7 +783,7 @@ ol li {
   display: flex;
   justify-content: end;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 60px;
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -762,6 +794,11 @@ ol li {
 @media screen and (min-width: 768px) {
   .header-default {
     height: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header-default {
+    margin-top: 80px;
   }
 }
 .header-default.team {
@@ -1311,7 +1348,10 @@ ol li {
   display: none;
 }
 
-@media screen and (max-width: 991px) {
+.container {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
   .container {
     max-width: 90%;
   }
