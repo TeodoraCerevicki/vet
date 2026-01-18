@@ -1,0 +1,54 @@
+@use "../../../../dynamics/variables" as vars;
+@use "../../../../dynamics/typography/fonts";
+
+.header-default {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    margin-top: 80px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../../assets/images/usluge/ambulanta.jpg);
+    background-image: url(../../assets/images/usluge/ambulanta.webp);
+
+    @media screen and (min-width: 768px) {
+        height: 400px;
+    }
+
+    &.team {
+        background-image: url(../../assets/images/team.png);
+        background-position-y: top;
+    }
+
+    .content-overlay {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
+        padding: 16px 16px 24px;
+        background-color: rgba($color: #000, $alpha: 0.5);
+    }
+
+    .header-title,
+    .header-subtitle {
+        color: vars.$font-color-lightest;
+    }
+
+    .header-title {
+        @include fonts.main-font(32px);
+
+        @media screen and (min-width: 768px) {
+            @include fonts.main-font(42px);
+        }
+    }
+
+    .header-subtitle {
+        @include fonts.main-font(16px);
+
+        @media screen and (min-width: 768px) {
+            @include fonts.main-font(20px);
+        }
+    }
+}
