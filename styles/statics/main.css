@@ -218,12 +218,18 @@ ol li {
   z-index: 1000;
   max-width: 1380px;
   width: 100%;
-  margin: 8px auto 0;
+  margin: 0 auto;
   padding: 0;
   background-color: #f2f0ef;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+@media screen and (min-width: 992px) {
+  .main-nav-wrapper {
+    margin: 8px auto 0;
+  }
+}
 .main-nav-wrapper:not(.sticky) .container {
+  max-width: 100%;
   margin-right: 0;
   margin-left: 0;
 }
@@ -263,15 +269,17 @@ ol li {
 @media screen and (max-width: 991px) {
   .main-nav {
     position: absolute;
-    top: 88px;
+    top: 60px;
     right: 0;
     left: 0;
-    flex-direction: column;
-    justify-content: end;
+    height: 100vh;
     padding-bottom: 16px;
-    border-radius: 8px;
-    background-color: #f2f0ef;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-top: 1px solid #245f73;
+    background-color: #fff;
+  }
+  .main-nav .link.active {
+    background-color: #245f73;
+    color: #fff;
   }
 }
 @media screen and (min-width: 992px) {

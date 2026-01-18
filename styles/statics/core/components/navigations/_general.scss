@@ -13,12 +13,17 @@
     z-index: 1000;
     max-width: 1380px;
     width: 100%;
-    margin: vars.$gap-small auto 0;
+    margin: 0 auto;
     padding: 0;
     background-color: vars.$bg-default;
     box-shadow: vars.$shadow-default;
 
+    @media screen and (min-width: 992px) {
+        margin: vars.$gap-small auto 0;
+    }
+
     &:not(.sticky) .container {
+        max-width: 100%;
         margin-right: 0;
         margin-left: 0;
     }
@@ -62,15 +67,18 @@
 .main-nav {
     @media screen and (max-width: 991px) {
         position: absolute;
-        top: 88px;
+        top: 60px;
         right: 0;
         left: 0;
-        flex-direction: column;
-        justify-content: end;
+        height: 100vh;
         padding-bottom: 16px;
-        border-radius: 8px;
-        background-color: vars.$bg-default;
-        box-shadow: vars.$shadow-default;
+        border-top: vars.$default-border;
+        background-color: vars.$bg-lightest;
+
+        .link.active {
+            background-color: vars.$accent;
+            color: vars.$font-color-lightest;
+        }
     }
 
     @media screen and (min-width: 992px) {
